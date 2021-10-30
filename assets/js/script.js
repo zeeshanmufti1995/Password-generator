@@ -1,4 +1,11 @@
 // Assignment code here
+var numbers = "0123456789".split("");
+
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
+var symbols = "!@#$%^&*?=+-><(){}[]_/\~".split("");
+var passwordLength = "";
+var userChoice = [];
 
 
 // Get references to the #generate element
