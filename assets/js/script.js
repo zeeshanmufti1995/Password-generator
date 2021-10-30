@@ -19,49 +19,6 @@ function generatePassword() {
             return passwordLength;
       }   
 
-          
-          alert("Your password will be " + passwordLength + " characters long");
-       
-
-          var numbersLength = confirm("Include numbers?");
-          if (numbersLength === true) {
-            userChoice = userChoice.concat(numbers)
-          }
-         
-          var upperCaseLength = confirm("Include UPPERCASE letters?");
-          if (upperCaseLength === true) {
-            userChoice = userChoice.concat(upperCase)
-          }
-         
-          var lowerCaseLength = confirm("Include lowercase letters?");
-          if (lowerCaseLength === true) {
-            userChoice = userChoice.concat(lowerCase)
-          }
-      
-          var symbolsLength = confirm("Include symbols?");
-          if (symbolsLength === true) {
-            userChoice = userChoice.concat(symbols)
-          }
-  
-    else {
-      console.log('fail');
-      alert("Please Select 1 value")
-      location.reload();
-     
-      
-    }
-
-  
-  
-  
-    for (var i = 0; i < passwordLength; i++) {
-      var randomPassword = Math.floor(Math.random() * userChoice.length)
-      password += userChoice[randomPassword]
-    }
-  
-    return password;
-  }
-
 
 
 
