@@ -45,7 +45,7 @@ function generatePassword() {
   
     else {
       console.log('fail');
-      alert("Please Select 1 value")
+      alert("Please Select  1 value")
       location.reload();
      
       
@@ -54,6 +54,10 @@ function generatePassword() {
   
   
   
+  
+    //the question is, why does the passwordLength not reset back to 0?
+    console.log(passwordLength, "actual password length")
+    //for loop to go through concatted array and select random elements to generate a random password
     for (var i = 0; i < passwordLength; i++) {
       var randomPassword = Math.floor(Math.random() * userChoice.length)
       password += userChoice[randomPassword]
@@ -64,7 +68,7 @@ function generatePassword() {
 
 
 
-
+// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
