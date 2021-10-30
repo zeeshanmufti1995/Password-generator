@@ -50,15 +50,7 @@ function generatePassword() {
      
       
     }
-
-  
-  
-  
-  
-    //the question is, why does the passwordLength not reset back to 0?
-    console.log(passwordLength, "actual password length")
-    //for loop to go through concatted array and select random elements to generate a random password
-    for (var i = 0; i < passwordLength; i++) {
+   for (var i = 0; i < passwordLength; i++) {
       var randomPassword = Math.floor(Math.random() * userChoice.length)
       password += userChoice[randomPassword]
     }
