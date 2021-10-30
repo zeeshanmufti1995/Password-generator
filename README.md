@@ -13,8 +13,8 @@
  * Github
  *  Web Browser
 
-## link
-
+##  Web link
+https://zeeshanmufti1995.github.io/Password-generator/
 
  # ScreenShot
   # Js
